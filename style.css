@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+/* .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+.wrapper nav {
+  height: 55px;
+  width: 100%;
+  background-color: #0984e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper nav .left {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.wrapper nav .left .photo {
+  width: 40px;
+}
+.wrapper nav .left .photo img {
+  width: 100%;
+}
+.textLeft a {
+  text-decoration: none;
+  padding: 0px 3px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile p {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+}
+.profile p span {
+  padding: 0px 1px;
+}
+.iconpro {
+  display: flex;
+  width: 25px;
+}
+.iconpro img {
+  width: 100%;
+}
+.iconRight a {
+  font-size: 1.5rem;
+  color: #fdff;
+  padding: 0px 5px;
+}
+.bodyContent {
+  width: 100%;
+  height: calc(100vh - 55px);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+.sidebar {
+  width: 168px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+  padding: 8px;
+  border-right: 2px solid #00000042;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+}
+.main .p1 {
+  height: 30px;
+  font-weight: bold;
+  color: gray;
+  background: #fff;
+  box-sizing: border-box;
+  /* text-align: center; */
+  line-height: 30px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+  background: #00000017;
+}
+.list {
+  height: 30px;
+  background: #ffffff;
+  box-sizing: border-box;
+  /* text-align: center; */
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  transition: 0.6s;
+  position: relative;
+}
+.list::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  /* border: 2px solid blue; */
+  border-left: 2px solid blue;
+  transition: 0.8s;
+  height: 0px;
+  left: 0;
+}
+.user {
+  padding-left: 10px;
+  height: 30px;
+  background: #ffffff;
+  box-sizing: border-box;
+  line-height: 30px;
+  font-size: 1.2rem;
+  transition: all 0.6s;
+  position: relative;
+}
+.user::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  /* border: 2px solid blue; */
+  border-left: 2px solid blue;
+  transition: 0.8s;
+  height: 0px;
+  left: 0;
+}
+.user:hover {
+  color: blue;
+}
+.p2 {
+  height: 30px;
+  font-weight: bold;
+  color: gray;
+  background: #fff;
+  box-sizing: border-box;
+  /* text-align: center; */
+  line-height: 30px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+  background: #00000017;
+}
+
+.list:hover {
+  color: blue;
+}
+.list:hover::before {
+  height: 30px;
+}
+.user:hover::before {
+  height: 30px;
+}
+.list span {
+  padding-right: 5px;
+}
+.user span {
+  padding-right: 5px;
+}
+.userlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#down {
+  font-size: 1.4rem;
+}
+#down:hover {
+  color: blue;
+}
+.inContent {
+  width: calc(100% - 168px);
+  height: calc(100vh - 55px);
+  background-color: rgb(255, 255, 255);
+}
+.inContent {
+  display: flex;
+  flex-direction: column;
+}
+.one {
+  width: 100%;
+  height: 52px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.249);
+}
+.one .leftOne .IconOne {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.rightOne {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+.textOne {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  background: #00a8ff;
+  padding: 4px;
+  text-align: center;
+  color: #ffff;
+  font-size: 1.3rem;
+}
+.downOne {
+  padding: 4px;
+  background-color: #00a8ff;
+  font-size: 1.3rem;
+  color: #ffff;
+  width: 110px;
+  text-align: center;
+}
+#need {
+  padding-right: 5px;
+}
+#check {
+  padding-right: 4px;
+}
+.two {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.two .box {
+  width: 240px;
+  height: auto;
+  background: #2e86de;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.two .box .heade {
+  width: 100%;
+  padding: 0px 20px;
+  height: 35px;
+
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  text-align: left;
+  line-height: 35px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.251);
+  border-radius: 5px 5px 0px 0px;
+}
+#boxone {
+  background-color: #2e86de;
+}
+.hed {
+  font-size: 1.3rem;
+}
+.hed span {
+  padding-right: 5px;
+}
+.bod {
+  height: 70px;
+  background: #007fff;
+  width: 100%;
+  text-align: left;
+  line-height: 70px;
+  padding: 0px 20px;
+}
+.bod > h2 {
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: #ffffffb0;
+}
+.fot {
+  height: 35px;
+  border-top: 2px solid rgba(0, 0, 0, 0.251);
+  line-height: 35px;
+  padding: 0px 20px;
+  text-align: right;
+}
+.fot .fote {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.fot .fote span {
+  padding-left: 5px;
+}
+#bowtwo {
+  background-color: #4cd137;
+}
+#bodtwo {
+  background-color: #44bd32;
+}
+#bowthree {
+  background-color: #fbc531;
+}
+#bodthree {
+  background-color: #e1b12c;
+}
+#bowfour {
+  background-color: #e74c3c;
+}
+#bodfour {
+  background-color: #c0392b;
+}
+.three {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+}
+.three .first {
+  /* width: 49%; */
+  height: 100%;
+  width: 480px;
+  border: 2px solid rgba(0, 0, 0, 0.201);
+}
+
+.hdbar {
+  width: 100%;
+  padding: 0px 20px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.254);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 1.4rem;
+}
+.hdbar p {
+  font-weight: bold;
+}
