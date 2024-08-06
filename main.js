@@ -22,3 +22,23 @@ allLinke.forEach((e) => {
     sideMenu.classList.add("sidebar");
   });
 });
+
+let sections = document.querySelectorAll("section");
+let navlinks = document.querySelectorAll("#nav li a");
+Window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.screenY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      navlinks.forEach((links) => {
+        links.classList.remove("activee");
+        document
+          .querySelector("#nav li a [herf*= " + id + "]")
+          .classList.add("activee");
+      });
+    }
+  });
+};

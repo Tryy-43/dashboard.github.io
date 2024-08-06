@@ -16,13 +16,14 @@
   </head>
   <body class="bg-[#11001f] font-poppin overflow-x-hidden">
     <nav
-      class="z-[999] flex fixed w-full justify-between items-center py-2 px-[10%] lg:border-b-[1px] md:border-b-[1px] border-gray-600 bg-[#11001f]"
+      class="z-[999] flex sticky top-0 w-full justify-between items-center py-2 px-[10%] lg:border-b-[1px] md:border-b-[1px] border-gray-600 bg-[#11001f]"
     >
       <h1 class="font-bold text-white text-3xl">
         TRY43
         <span class="font-bold text-4xl ml-[-5px] text-purple-700">.</span>
       </h1>
       <ul
+        id="nav"
         class="hidden py-4 px-6 lg:flex md:flex justify-center items-center gap-5"
       >
         <li>
@@ -111,7 +112,7 @@
       </div>
     </nav>
     <section id="home"></section>
-    <section class="hero flex justify-center items-center pt-[8rem]">
+    <section class="hero flex justify-center items-center pt-[5rem]">
       <section class="px-[10%] flex flex-col text-center items-center mt-5">
         <div class="size-32 overflow-hidden rounded-full" data-aos="fade-up">
           <img src="imgs/tanjiro.jpg" alt="Soytry" />
@@ -154,7 +155,7 @@
         </div>
       </section>
     </section>
-    <section id="about" class="flex justify-center items-center pt-5">
+    <section id="about" class="flex justify-center items-center">
       <div class="px-[10%] text-center mt-20">
         <h2 class="text-sm text-gray-300" data-aos="fade-up">Introduce</h2>
         <h1 class="text-4xl text-gray-200" data-aos="fade-up">About Me</h1>
@@ -456,7 +457,7 @@
     </section>
     <section
       id="contact"
-      class="flex justify-center items-center py-20 px-[10%]"
+      class="flex justify-center py-20 items-center px-[10%]"
     >
       <div class="m-auto text-center text-white">
         <div>
@@ -527,7 +528,7 @@
         </form>
       </div>
     </section>
-    <footer class="flex justify-center items-center pt-20 px-[10%]">
+    <footer class="flex justify-center items-center mt-6 px-[10%]">
       <div class="w-full m-auto text-center">
         <h1
           class="font-bold text-white text-3xl text-center"
