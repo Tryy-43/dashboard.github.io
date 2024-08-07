@@ -2,12 +2,12 @@ const btnShow = document.querySelector("#btn-show");
 const sideMenu = document.querySelector("#side");
 const btnHide = document.querySelector("#btn-hide");
 btnShow.addEventListener("click", () => {
-  sideMenu.classList.remove("sidebar");
-  sideMenu.classList.add("close");
+  sideMenu.classList.remove("w-0");
+  sideMenu.classList.add("w-1/2");
 });
 btnHide.addEventListener("click", () => {
-  sideMenu.classList.remove("close");
-  sideMenu.classList.add("sidebar");
+  sideMenu.classList.remove("w-1/2");
+  sideMenu.classList.add("w-0");
 });
 // const menuLink = document.querySelectorAll(".nav-link");
 // menuLink.forEach((e) => {
@@ -18,8 +18,8 @@ btnHide.addEventListener("click", () => {
 const allLinke = document.querySelectorAll("#side > li");
 allLinke.forEach((e) => {
   e.addEventListener("click", () => {
-    sideMenu.classList.remove("close");
-    sideMenu.classList.add("sidebar");
+    sideMenu.classList.remove("w-1/2");
+    sideMenu.classList.add("w-0");
   });
 });
 
@@ -34,10 +34,10 @@ Window.onscroll = () => {
 
     if (top >= offset && top < offset + height) {
       navlinks.forEach((links) => {
-        links.classList.remove("activee");
+        links.classList.remove("activeee");
         document
           .querySelector("#nav li a [herf*= " + id + "]")
-          .classList.add("activee");
+          .classList.add("activeee");
       });
     }
   });

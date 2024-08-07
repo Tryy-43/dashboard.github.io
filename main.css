@@ -576,6 +576,10 @@ video {
   left: 50%;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .top-0{
   top: 0px;
 }
@@ -767,6 +771,10 @@ video {
   width: 100%;
 }
 
+.w-0{
+  width: 0px;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -928,6 +936,20 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#1a0030\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 0 48 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#200435d7\]{
+  background-color: #200435d7;
+}
+
+.bg-\[\#1b062c\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 6 44 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'imgs\/work-1\.png\'\)\]{
   background-image: url('imgs/work-1.png');
 }
@@ -1051,18 +1073,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pt-\[10\%\]{
-  padding-top: 10%;
-}
-
-.pt-\[8rem\]{
-  padding-top: 8rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
 }
 
 .pt-\[5rem\]{
@@ -1255,6 +1265,11 @@ video {
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#431a65\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 26 101 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover{
