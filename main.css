@@ -556,16 +556,16 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
 
 .relative{
   position: relative;
-}
-
-.sticky{
-  position: sticky;
 }
 
 .bottom-4{
@@ -578,10 +578,6 @@ video {
 
 .right-0{
   right: 0px;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .top-\[-20px\]{
@@ -771,10 +767,6 @@ video {
   width: 100%;
 }
 
-.w-0{
-  width: 0px;
-}
-
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -913,6 +905,16 @@ video {
   background-color: rgb(17 0 31 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#1a0030\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 0 48 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1b062c\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 6 44 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#290039\]{
   --tw-bg-opacity: 1;
   background-color: rgb(41 0 57 / var(--tw-bg-opacity));
@@ -922,32 +924,9 @@ video {
   background-color: #2a004a4d;
 }
 
-.bg-\[\#2a004aa6\]{
-  background-color: #2a004aa6;
-}
-
-.bg-purple-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1a0030\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 0 48 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#200435d7\]{
-  background-color: #200435d7;
-}
-
-.bg-\[\#1b062c\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 6 44 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'imgs\/work-1\.png\'\)\]{
@@ -1252,24 +1231,19 @@ video {
   border-color: transparent;
 }
 
+.hover\:bg-\[\#431a65\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 26 101 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-fuchsia-950:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(74 4 78 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-purple-700:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#431a65\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 26 101 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover{
